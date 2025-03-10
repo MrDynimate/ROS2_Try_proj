@@ -21,9 +21,9 @@ public:
       	// c_str()函数是string类的一个函数，作用是把string类型转化为char类型(%s要求是一个字符串)
         RCLCPP_INFO(this->get_logger(), "大家好, 我是%s的服务员.",name.c_str());
         
-        // 创建发布者, 发布hamburger, 发布的消息类型为<std_msgs::msg::String>
+        // 创建发布者, 发布coffee, 发布的消息类型为<std_msgs::msg::String>
       	// 格式: 发布者名字 = this->create_publisher<要发布的话题类型>("要发布的话题名称", 通信Qos);
-        pub_hamburger = this->create_publisher<std_msgs::msg::String>("hamburger", 10);
+        pub_coffee = this->create_publisher<std_msgs::msg::String>("coffee", 10);
         
         // 创建发布者, 发布advertisement
         pub_advertisement = this->create_publisher<std_msgs::msg::String>("advertisement", 10);
@@ -38,18 +38,18 @@ public:
       	// 		auto f = std::bind(fun, placeholders::_2, placeholders::_1, 80);
       	// 		f(60,70) 等效于 fun(70, 60, 80) 
       	// 还记得前文提到的占位符吗,placeholders::_1 就是f(60,70) 中的那个参数"1"
-        sub_money = this->create_subscription<std_msgs::msg::UInt32>("money_of_hamburger", 10, std::bind(&peetsNode::money_callback, this, _1));
+        sub_money = this->create_subscription<std_msgs::msg::UInt32>("money_of_coffee", 10, std::bind(&peetsNode::money_callback, this, _1));
     }
 private:
-    // 定义一个汉堡售出计数器
+    // 定义一个咖啡售出计数器
   	// 在32位系统中size_t是4字节的，在64位系统中，size_t是8字节的，这样利用该类型可以增加程序移植性。
     size_t count;
 
     // 声明一个定时器
     rclcpp::TimerBase::SharedPtr advertisement_timer;
 
-    // 声明一个发布者,用于发布汉堡
-    rclcpp::Publisher<std_msgs::msg::String>::SharedPtr pub_hamburger;
+    // 声明一个发布者,用于发布咖啡
+    rclcpp::Publisher<std_msgs::msg::String>::SharedPtr pub_coffee;
     
     // 声明一个订阅者,用于收钱
     rclcpp::Subscription<std_msgs::msg::UInt32>::SharedPtr sub_money;
@@ -62,27 +62,27 @@ private:
     {
       	// 定义一个String类型的字符串, 其中字符串存在.data中, %s使用时别忘了使用.c_str()转换为char类型.
         auto str_advertisement = std_msgs::msg::String();
-        str_advertisement.data = "大鸡腿降价啦";
-        RCLCPP_INFO(this->get_logger(), "KFC发布了一个广告:%s", str_advertisement.data.c_str());
+        str_advertisement.data = "拿铁咖啡降价啦";
+        RCLCPP_INFO(this->get_logger(), "peets发布了一个广告:%s", str_advertisement.data.c_str());
         pub_advertisement->publish(str_advertisement);
     }
     
     // 收钱订阅者回调函数(有参数, 参数类型跟上面订阅者订阅的参数类型相同, 注意要加上::SharedPtr, 因为传进来的是一个指针)
     void money_callback(const std_msgs::msg::UInt32::SharedPtr msg)
     {
-        // 如果收到了十元钱,才发布汉堡. 订阅的信息在msg->data中
+        // 如果收到了十元钱,才发布咖啡. 订阅的信息在msg->data中
         if(msg->data == 10)
         {
             RCLCPP_INFO(this->get_logger(), "收款 %d 元", msg->data);
 
             // 字符串流
-            auto str_hamburger_num = std_msgs::msg::String();
-            str_hamburger_num.data = "第" + std::to_string(count++) + "个汉堡";
-            RCLCPP_INFO(this->get_logger(), "这是我卖出的%s", str_hamburger_num.data.c_str());
+            auto str_coffee_num = std_msgs::msg::String();
+            str_coffee_num.data = "第" + std::to_string(count++) + "杯咖啡";
+            RCLCPP_INFO(this->get_logger(), "这是我卖出的%s", str_coffee_num.data.c_str());
             
             // 发布字符串流
           	// 发布就这么写 "发布器->publish(要发布的);", 简单吧
-            pub_hamburger->publish(str_hamburger_num);
+            pub_hamburger->publish(str_coffee_num);
         }
         
     }
@@ -92,7 +92,7 @@ int main(int argc, char **argv)
 {
     // 初始化rclcpp
     rclcpp::init(argc, argv);
-    // 产生一个KFC的节点
+    // 产生一个peets的节点
     auto node = std::make_shared<peetsNode>("peets");
   	// spin函数: 一旦进入spin函数，相当于它在自己的函数里面死循环了。只要回调函数队列里面有callback函数在，它就会马上去执行callback函数。如果没有的话，它就会阻塞，不会占用CPU。注意不要再spin后面放其他东西, 他们都不会执行的
     rclcpp::spin(node);

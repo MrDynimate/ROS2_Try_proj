@@ -21,7 +21,7 @@ public:
 
         // 创建订阅者,订阅hamburger
         // 占位符还记得吗? 复习一下, 此处的_1 表示const std_msgs::msg::String::SharedPtr msg
-        sub_hamburger = this->create_subscription<std_msgs::msg::String>("hamburger", 10, std::bind(&customerNode::hamburger_callback, this, _1));
+        sub_coffee = this->create_subscription<std_msgs::msg::String>("coffee", 10, std::bind(&customerNode::coffee_callback, this, _1));
         
         // 创建订阅者,订阅advertisement
         sub_advertisement = this->create_subscription<std_msgs::msg::String>("advertisement", 10, std::bind(&customerNode::advertisement_callback, this, _1));
@@ -30,14 +30,14 @@ public:
         hungry_timer = this->create_wall_timer(1000ms, std::bind(&customerNode::hungry_timer_callback, this));
 
         // 创建发布者,发布money
-        pub_money = this->create_publisher<std_msgs::msg::UInt32>("money_of_hamburger", 10);
+        pub_money = this->create_publisher<std_msgs::msg::UInt32>("money_of_coffee", 10);
         
         // 给money赋值
         money.data = 10;
 
         //第一次给钱
         pub_money->publish(money);
-        RCLCPP_INFO(this->get_logger(), "我饿了, 我要吃汉堡! 付款 %d 元", money.data);
+        RCLCPP_INFO(this->get_logger(), "我困了, 我要喝咖啡! 付款 %d 元", money.data);
 
     }
 private:
@@ -45,27 +45,27 @@ private:
     std_msgs::msg::UInt32 money;
 
     // 声明一个定时器
-    rclcpp::TimerBase::SharedPtr hungry_timer;
+    rclcpp::TimerBase::SharedPtr sleepy_timer;
 
-    // 声明一个订阅者,用于订阅发出的汉堡
-    rclcpp::Subscription<std_msgs::msg::String>::SharedPtr sub_hamburger;
+    // 声明一个订阅者,用于订阅发出的咖啡
+    rclcpp::Subscription<std_msgs::msg::String>::SharedPtr sub_coffee;
 
-    // 声明一个发布者,用于给KFC钱
+    // 声明一个发布者,用于给peets钱
     rclcpp::Publisher<std_msgs::msg::UInt32>::SharedPtr pub_money;
 
     // 声明一个订阅者,用于订阅广告
     rclcpp::Subscription<std_msgs::msg::String>::SharedPtr sub_advertisement;
     
-    // 汉堡订阅者回调函数
-    void hamburger_callback(const std_msgs::msg::String::SharedPtr msg)
+    // 咖啡订阅者回调函数
+    void coffee_callback(const std_msgs::msg::String::SharedPtr msg)
     {
-        RCLCPP_INFO(this->get_logger(), "这是我吃的 %s ", msg->data.c_str());
+        RCLCPP_INFO(this->get_logger(), "这是我喝的 %s ", msg->data.c_str());
     }
 
-    // 饥饿定时器回调函数
-    void hungry_timer_callback()
+    // 困倦定时器回调函数
+    void sleepy_timer_callback()
     {
-        RCLCPP_INFO(this->get_logger(), "我又饿了, 还想再吃一个! 付款 %d 元", money.data);
+        RCLCPP_INFO(this->get_logger(), "我又困了, 还想再喝一杯! 付款 %d 元", money.data);
         pub_money->publish(money);
     }
 
