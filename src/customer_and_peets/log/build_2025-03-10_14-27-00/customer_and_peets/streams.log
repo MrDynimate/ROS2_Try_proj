@@ -1,0 +1,32 @@
+[0.008s] Invoking command in '/home/mrdan/crs_ws/src/customer_and_peets/build/customer_and_peets': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mrdan/dev_ws/install/originbot_viz:/home/mrdan/dev_ws/install/originbot_demo:/home/mrdan/dev_ws/install/originbot_gazebo_harmonic:/home/mrdan/dev_ws/install/originbot_gazebo_fortress:/home/mrdan/dev_ws/install/originbot_gazebo:/home/mrdan/dev_ws/install/originbot_description:/home/mrdan/dev_ws/install/line_follower_model:/opt/ros/foxy /usr/bin/cmake --build /home/mrdan/crs_ws/src/customer_and_peets/build/customer_and_peets -- -j8 -l8
+[0.038s] [35m[1mScanning dependencies of target customer_node[0m
+[0.038s] [35m[1mScanning dependencies of target peets_node[0m
+[0.053s] [ 25%] [32mBuilding CXX object CMakeFiles/peets_node.dir/src/peets.cpp.o[0m
+[0.054s] [ 50%] [32mBuilding CXX object CMakeFiles/customer_node.dir/src/customer.cpp.o[0m
+[3.657s] [ 75%] [32m[1mLinking CXX executable customer_node[0m
+[3.712s] [100%] [32m[1mLinking CXX executable peets_node[0m
+[3.844s] [100%] Built target customer_node
+[3.878s] [100%] Built target peets_node
+[3.885s] Invoked command in '/home/mrdan/crs_ws/src/customer_and_peets/build/customer_and_peets' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mrdan/dev_ws/install/originbot_viz:/home/mrdan/dev_ws/install/originbot_demo:/home/mrdan/dev_ws/install/originbot_gazebo_harmonic:/home/mrdan/dev_ws/install/originbot_gazebo_fortress:/home/mrdan/dev_ws/install/originbot_gazebo:/home/mrdan/dev_ws/install/originbot_description:/home/mrdan/dev_ws/install/line_follower_model:/opt/ros/foxy /usr/bin/cmake --build /home/mrdan/crs_ws/src/customer_and_peets/build/customer_and_peets -- -j8 -l8
+[3.897s] Invoking command in '/home/mrdan/crs_ws/src/customer_and_peets/build/customer_and_peets': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mrdan/dev_ws/install/originbot_viz:/home/mrdan/dev_ws/install/originbot_demo:/home/mrdan/dev_ws/install/originbot_gazebo_harmonic:/home/mrdan/dev_ws/install/originbot_gazebo_fortress:/home/mrdan/dev_ws/install/originbot_gazebo:/home/mrdan/dev_ws/install/originbot_description:/home/mrdan/dev_ws/install/line_follower_model:/opt/ros/foxy /usr/bin/cmake --install /home/mrdan/crs_ws/src/customer_and_peets/build/customer_and_peets
+[3.903s] -- Install configuration: ""
+[3.903s] -- Installing: /home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/lib/customer_and_peets/customer_node
+[3.904s] -- Set runtime path of "/home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/lib/customer_and_peets/customer_node" to ""
+[3.904s] -- Installing: /home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/lib/customer_and_peets/peets_node
+[3.905s] -- Set runtime path of "/home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/lib/customer_and_peets/peets_node" to ""
+[3.905s] -- Up-to-date: /home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/ament_index/resource_index/package_run_dependencies/customer_and_peets
+[3.905s] -- Up-to-date: /home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/ament_index/resource_index/parent_prefix_path/customer_and_peets
+[3.905s] -- Up-to-date: /home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/customer_and_peets/environment/ament_prefix_path.sh
+[3.905s] -- Up-to-date: /home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/customer_and_peets/environment/ament_prefix_path.dsv
+[3.906s] -- Up-to-date: /home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/customer_and_peets/environment/path.sh
+[3.906s] -- Up-to-date: /home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/customer_and_peets/environment/path.dsv
+[3.906s] -- Up-to-date: /home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/customer_and_peets/local_setup.bash
+[3.906s] -- Up-to-date: /home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/customer_and_peets/local_setup.sh
+[3.906s] -- Up-to-date: /home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/customer_and_peets/local_setup.zsh
+[3.906s] -- Up-to-date: /home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/customer_and_peets/local_setup.dsv
+[3.906s] -- Installing: /home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/customer_and_peets/package.dsv
+[3.906s] -- Up-to-date: /home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/ament_index/resource_index/packages/customer_and_peets
+[3.906s] -- Up-to-date: /home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/customer_and_peets/cmake/customer_and_peetsConfig.cmake
+[3.906s] -- Up-to-date: /home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/customer_and_peets/cmake/customer_and_peetsConfig-version.cmake
+[3.906s] -- Up-to-date: /home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/customer_and_peets/package.xml
+[3.907s] Invoked command in '/home/mrdan/crs_ws/src/customer_and_peets/build/customer_and_peets' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mrdan/dev_ws/install/originbot_viz:/home/mrdan/dev_ws/install/originbot_demo:/home/mrdan/dev_ws/install/originbot_gazebo_harmonic:/home/mrdan/dev_ws/install/originbot_gazebo_fortress:/home/mrdan/dev_ws/install/originbot_gazebo:/home/mrdan/dev_ws/install/originbot_description:/home/mrdan/dev_ws/install/line_follower_model:/opt/ros/foxy /usr/bin/cmake --install /home/mrdan/crs_ws/src/customer_and_peets/build/customer_and_peets

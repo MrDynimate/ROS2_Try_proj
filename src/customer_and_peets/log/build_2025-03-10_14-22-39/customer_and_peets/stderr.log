@@ -1,0 +1,29 @@
+[01m[K/home/mrdan/crs_ws/src/customer_and_peets/src/peets.cpp:[m[K In constructor ‘[01m[KpeetsNode::peetsNode(std::string)[m[K’:
+[01m[K/home/mrdan/crs_ws/src/customer_and_peets/src/peets.cpp:33:74:[m[K [01;31m[Kerror: [m[K‘[01m[KKFCNode[m[K’ has not been declared
+   33 | rtisement_timer = this->create_wall_timer(5000ms, std::bind(&[01;31m[KKFCNode[m[K::advertisement_timer_callback, this));
+      |                                                              [01;31m[K^~~~~~~[m[K
+
+[01m[K/home/mrdan/crs_ws/src/customer_and_peets/src/customer.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/mrdan/crs_ws/src/customer_and_peets/src/customer.cpp:84:34:[m[K [01;31m[Kerror: [m[K‘[01m[KcustomerNode[m[K’ was not declared in this scope; did you mean ‘[01m[KCustomerNode[m[K’?
+   84 |     auto node = std::make_shared<[01;31m[KcustomerNode[m[K>("customer");
+      |                                  [01;31m[K^~~~~~~~~~~~[m[K
+      |                                  [32m[KCustomerNode[m[K
+[01m[K/home/mrdan/crs_ws/src/customer_and_peets/src/customer.cpp:84:58:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >(const char [9])[m[K’
+   84 |     auto node = std::make_shared<customerNode>("customer"[01;31m[K)[m[K;
+      |                                                          [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+                 from [01m[K/home/mrdan/crs_ws/src/customer_and_peets/src/customer.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:714:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  714 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:714:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/mrdan/crs_ws/src/customer_and_peets/src/customer.cpp:84:58:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   84 |     auto node = std::make_shared<customerNode>("customer"[01;31m[K)[m[K;
+      |                                                          [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/customer_node.dir/build.make:63: CMakeFiles/customer_node.dir/src/customer.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/customer_node.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/peets_node.dir/build.make:63: CMakeFiles/peets_node.dir/src/peets.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/peets_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

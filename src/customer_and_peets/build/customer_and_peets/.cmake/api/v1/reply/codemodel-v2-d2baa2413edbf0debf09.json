@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "customer_and_peets",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "customer_and_peets_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-customer_and_peets_uninstall-9aade30a5e5dd30f576e.json",
+					"name" : "customer_and_peets_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "customer_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-customer_node-465233f2276963ab7fb0.json",
+					"name" : "customer_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "peets_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-peets_node-aa5b896458eb524b9911.json",
+					"name" : "peets_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-93864c1d8ec2971f12e1.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/mrdan/crs_ws/src/customer_and_peets/build/customer_and_peets",
+		"source" : "/home/mrdan/crs_ws/src/customer_and_peets"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

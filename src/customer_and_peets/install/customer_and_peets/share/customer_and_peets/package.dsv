@@ -1,0 +1,8 @@
+source;share/customer_and_peets/hook/cmake_prefix_path.ps1
+source;share/customer_and_peets/hook/cmake_prefix_path.dsv
+source;share/customer_and_peets/hook/cmake_prefix_path.sh
+source;share/customer_and_peets/local_setup.bash
+source;share/customer_and_peets/local_setup.dsv
+source;share/customer_and_peets/local_setup.ps1
+source;share/customer_and_peets/local_setup.sh
+source;share/customer_and_peets/local_setup.zsh

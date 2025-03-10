@@ -1,0 +1,17 @@
+/home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/lib/customer_and_peets/customer_node
+/home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/lib/customer_and_peets/peets_node
+/home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/ament_index/resource_index/package_run_dependencies/customer_and_peets
+/home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/ament_index/resource_index/parent_prefix_path/customer_and_peets
+/home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/customer_and_peets/environment/ament_prefix_path.sh
+/home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/customer_and_peets/environment/ament_prefix_path.dsv
+/home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/customer_and_peets/environment/path.sh
+/home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/customer_and_peets/environment/path.dsv
+/home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/customer_and_peets/local_setup.bash
+/home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/customer_and_peets/local_setup.sh
+/home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/customer_and_peets/local_setup.zsh
+/home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/customer_and_peets/local_setup.dsv
+/home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/customer_and_peets/package.dsv
+/home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/ament_index/resource_index/packages/customer_and_peets
+/home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/customer_and_peets/cmake/customer_and_peetsConfig.cmake
+/home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/customer_and_peets/cmake/customer_and_peetsConfig-version.cmake
+/home/mrdan/crs_ws/src/customer_and_peets/install/customer_and_peets/share/customer_and_peets/package.xml

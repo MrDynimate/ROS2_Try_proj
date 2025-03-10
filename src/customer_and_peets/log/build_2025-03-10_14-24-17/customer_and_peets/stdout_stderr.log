@@ -1,0 +1,24 @@
+[35m[1mScanning dependencies of target customer_node[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/peets_node.dir/src/peets.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/customer_node.dir/src/customer.cpp.o[0m
+[01m[K/home/mrdan/crs_ws/src/customer_and_peets/src/peets.cpp:[m[K In constructor ‘[01m[KpeetsNode::peetsNode(std::string)[m[K’:
+[01m[K/home/mrdan/crs_ws/src/customer_and_peets/src/peets.cpp:33:74:[m[K [01;31m[Kerror: [m[K‘[01m[KKFCNode[m[K’ has not been declared
+   33 | rtisement_timer = this->create_wall_timer(5000ms, std::bind(&[01;31m[KKFCNode[m[K::advertisement_timer_callback, this));
+      |                                                              [01;31m[K^~~~~~~[m[K
+
+[01m[K/home/mrdan/crs_ws/src/customer_and_peets/src/customer.cpp:[m[K In constructor ‘[01m[KcustomerNode::customerNode(std::string)[m[K’:
+[01m[K/home/mrdan/crs_ws/src/customer_and_peets/src/customer.cpp:24:102:[m[K [01;31m[Kerror: [m[K‘[01m[KCustomerNode[m[K’ has not been declared
+   24 |         sub_hamburger = this->create_subscription<std_msgs::msg::String>("hamburger", 10, std::bind(&[01;31m[KCustomerNode[m[K::hamburger_callback, this, _1));
+      |                                                                                                      [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/mrdan/crs_ws/src/customer_and_peets/src/customer.cpp:27:110:[m[K [01;31m[Kerror: [m[K‘[01m[KCustomerNode[m[K’ has not been declared
+   27 |         sub_advertisement = this->create_subscription<std_msgs::msg::String>("advertisement", 10, std::bind(&[01;31m[KCustomerNode[m[K::advertisement_callback, this, _1));
+      |                                                                                                              [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/mrdan/crs_ws/src/customer_and_peets/src/customer.cpp:30:67:[m[K [01;31m[Kerror: [m[K‘[01m[KCustomerNode[m[K’ has not been declared
+   30 |         hungry_timer = this->create_wall_timer(1000ms, std::bind(&[01;31m[KCustomerNode[m[K::hungry_timer_callback, this));
+      |                                                                   [01;31m[K^~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/customer_node.dir/build.make:63: CMakeFiles/customer_node.dir/src/customer.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/customer_node.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/peets_node.dir/build.make:63: CMakeFiles/peets_node.dir/src/peets.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/peets_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
