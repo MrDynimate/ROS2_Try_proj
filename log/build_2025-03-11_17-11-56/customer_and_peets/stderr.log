@@ -1,0 +1,8 @@
+[01m[K/home/mrdan/crs_ws/src/customer_and_peets/src/peets.cpp:[m[K In member function ‘[01m[Kvoid peetsNode::money_callback(std_msgs::msg::UInt32_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/mrdan/crs_ws/src/customer_and_peets/src/peets.cpp:85:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_hamburger[m[K’ was not declared in this scope
+   85 |             [01;31m[Kpub_hamburger[m[K->publish(str_coffee_num);
+      |             [01;31m[K^~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/peets_node.dir/build.make:63: CMakeFiles/peets_node.dir/src/peets.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/peets_node.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

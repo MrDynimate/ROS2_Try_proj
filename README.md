@@ -38,9 +38,15 @@ cd ROS2_Try_proj
 
 ### 2.编译项目
 ```bash
-colcon build --symlink-install
+colcon build --packages-select customer_and_pee
 ```
-### 3.运行节点
+
+### 3.配置环境变量
+```bash
+echo "source ~/crs_ws/install/setup.bash" >> ~/.bashrc
+```
+
+### 4.运行节点
 **打开终端1（顾客）：**
 ```bash
 source install/setup.bash

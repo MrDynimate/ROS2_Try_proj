@@ -82,7 +82,7 @@ private:
             
             // 发布字符串流
           	// 发布就这么写 "发布器->publish(要发布的);", 简单吧
-            pub_hamburger->publish(str_coffee_num);
+            pub_coffee->publish(str_coffee_num);
         }
         
     }

@@ -27,7 +27,7 @@ public:
         sub_advertisement = this->create_subscription<std_msgs::msg::String>("advertisement", 10, std::bind(&customerNode::advertisement_callback, this, _1));
         
         // 创建定时器,每1000ms饿一次
-        hungry_timer = this->create_wall_timer(1000ms, std::bind(&customerNode::hungry_timer_callback, this));
+        sleepy_timer = this->create_wall_timer(1000ms, std::bind(&customerNode::sleepy_timer_callback, this));
 
         // 创建发布者,发布money
         pub_money = this->create_publisher<std_msgs::msg::UInt32>("money_of_coffee", 10);
