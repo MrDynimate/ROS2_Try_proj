@@ -128,7 +128,7 @@ source install/setup.bash
 - [ ] 更多节点功能
 
 ## 📜 许可证
-[Apache License 2.0](https://www.mit-license.org/)
+[MIT license](https://www.mit-license.org/)
 
 ---
 __项目维护者__：MrDynimate
