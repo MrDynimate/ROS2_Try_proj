@@ -48,7 +48,7 @@ cd ROS2_Try_proj
 
 ### 2.编译项目
 ```bash
-colcon build --packages-select customer_and_pee
+colcon build --packages-select customer_and_peets
 ```
 
 ### 3.配置环境变量
@@ -57,16 +57,11 @@ echo "source ~/crs_ws/install/setup.bash" >> ~/.bashrc
 ```
 
 ### 4.运行节点
-**打开终端1（顾客）：**
+**打开终端**
 ```bash
-source install/setup.bash
-ros2 run customer_and_peets customer
+ros2 launch customer_and_peets customer_and_peets_launch.py
 ```
-**打开终端2（咖啡师）：**
-```bash
-source install/setup.bash
-ros2 run customer_and_peets peets
-```
+
 ## 📝 节点功能说明
 ### 顾客节点 (customer)
 
