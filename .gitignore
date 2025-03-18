@@ -1,0 +1,7 @@
+#不提交构建中间文件
+build/
+install/
+log/
+
+#不提交vscode配置文件
+.vscode/
