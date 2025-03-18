@@ -24,6 +24,8 @@ crs_ws/
 └── src/
     └── customer_and_peets/ # ROS2功能包
         ├── src/
+        │   ├── lanuch
+        │   │   ├── customer_and_peets_launch.py
         │   ├── nodes/
         │   │   ├── customer.cpp  # 顾客节点源码
         │   │   ├── peets.cpp     # 咖啡师节点源码
