@@ -1,5 +1,0 @@
-[35m[1mScanning dependencies of target customer_node[0m
-[ 25%] [32mBuilding CXX object CMakeFiles/peets_node.dir/src/peets.cpp.o[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/customer_node.dir/src/customer.cpp.o[0m
-[ 75%] [32m[1mLinking CXX executable customer_node[0m
-[ 75%] Built target customer_node

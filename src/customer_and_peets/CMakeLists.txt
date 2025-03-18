@@ -31,18 +31,20 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-add_executable(customer_node src/customer.cpp)
+add_executable(customer_node src/node/customer.cpp)
 ament_target_dependencies(customer_node rclcpp std_msgs)
 
-add_executable(peets_node src/peets.cpp)
+add_executable(peets_node src/node/peets.cpp)
 ament_target_dependencies(peets_node rclcpp std_msgs)
 
 install(TARGETS
 	customer_node
 	peets_node
 	DESTINATION lib/${PROJECT_NAME}
-  DIRECTORY 
-  launch
-  DESTINATION share/${PROJECT_NAME}/launch
 	)
+  
+install(DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME}
+)
+  
 ament_package()

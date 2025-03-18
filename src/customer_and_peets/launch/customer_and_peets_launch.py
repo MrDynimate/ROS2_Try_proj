@@ -5,13 +5,13 @@ def generate_launch_description():
     return LaunchDescription([
         Node(
             package='customer_and_peets',
-            executable='customer',
+            executable='customer_node',
             name='customer_node',
             output='screen'
         ),
         Node(
             package='customer_and_peets',
-            executable='peets',
+            executable='peets_node',
             name='peets_node',
             output='screen'
         )

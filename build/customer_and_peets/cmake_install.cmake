@@ -1,8 +1,8 @@
-# Install script for directory: /home/mrdan/crs_ws/src/customer_and_peets
+# Install script for directory: /home/habit/assign_term8/ROS2_Try_proj/src/customer_and_peets
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/mrdan/crs_ws/install/customer_and_peets")
+  set(CMAKE_INSTALL_PREFIX "/home/habit/assign_term8/ROS2_Try_proj/install/customer_and_peets")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -37,6 +37,11 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+endif()
+
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/customer_and_peets/customer_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/customer_and_peets/customer_node")
@@ -44,12 +49,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/customer_and_peets/customer_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/customer_and_peets" TYPE EXECUTABLE FILES "/home/mrdan/crs_ws/build/customer_and_peets/customer_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/customer_and_peets" TYPE EXECUTABLE FILES "/home/habit/assign_term8/ROS2_Try_proj/build/customer_and_peets/customer_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/customer_and_peets/customer_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/customer_and_peets/customer_node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/customer_and_peets/customer_node"
-         OLD_RPATH "/opt/ros/foxy/lib:"
+         OLD_RPATH "/opt/ros/humble/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/customer_and_peets/customer_node")
@@ -64,12 +69,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/customer_and_peets/peets_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/customer_and_peets" TYPE EXECUTABLE FILES "/home/mrdan/crs_ws/build/customer_and_peets/peets_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/customer_and_peets" TYPE EXECUTABLE FILES "/home/habit/assign_term8/ROS2_Try_proj/build/customer_and_peets/peets_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/customer_and_peets/peets_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/customer_and_peets/peets_node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/customer_and_peets/peets_node"
-         OLD_RPATH "/opt/ros/foxy/lib:"
+         OLD_RPATH "/opt/ros/humble/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/customer_and_peets/peets_node")
@@ -78,62 +83,66 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/mrdan/crs_ws/build/customer_and_peets/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/customer_and_peets")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/customer_and_peets" TYPE DIRECTORY FILES "/home/habit/assign_term8/ROS2_Try_proj/src/customer_and_peets/launch")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/mrdan/crs_ws/build/customer_and_peets/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/customer_and_peets")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/habit/assign_term8/ROS2_Try_proj/build/customer_and_peets/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/customer_and_peets")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/customer_and_peets/environment" TYPE FILE FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/habit/assign_term8/ROS2_Try_proj/build/customer_and_peets/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/customer_and_peets")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/customer_and_peets/environment" TYPE FILE FILES "/home/mrdan/crs_ws/build/customer_and_peets/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/customer_and_peets/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/customer_and_peets/environment" TYPE FILE FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/customer_and_peets/environment" TYPE FILE FILES "/home/habit/assign_term8/ROS2_Try_proj/build/customer_and_peets/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/customer_and_peets/environment" TYPE FILE FILES "/home/mrdan/crs_ws/build/customer_and_peets/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/customer_and_peets/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/customer_and_peets" TYPE FILE FILES "/home/mrdan/crs_ws/build/customer_and_peets/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/customer_and_peets/environment" TYPE FILE FILES "/home/habit/assign_term8/ROS2_Try_proj/build/customer_and_peets/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/customer_and_peets" TYPE FILE FILES "/home/mrdan/crs_ws/build/customer_and_peets/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/customer_and_peets" TYPE FILE FILES "/home/habit/assign_term8/ROS2_Try_proj/build/customer_and_peets/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/customer_and_peets" TYPE FILE FILES "/home/mrdan/crs_ws/build/customer_and_peets/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/customer_and_peets" TYPE FILE FILES "/home/habit/assign_term8/ROS2_Try_proj/build/customer_and_peets/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/customer_and_peets" TYPE FILE FILES "/home/mrdan/crs_ws/build/customer_and_peets/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/customer_and_peets" TYPE FILE FILES "/home/habit/assign_term8/ROS2_Try_proj/build/customer_and_peets/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/customer_and_peets" TYPE FILE FILES "/home/mrdan/crs_ws/build/customer_and_peets/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/customer_and_peets" TYPE FILE FILES "/home/habit/assign_term8/ROS2_Try_proj/build/customer_and_peets/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/mrdan/crs_ws/build/customer_and_peets/ament_cmake_index/share/ament_index/resource_index/packages/customer_and_peets")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/customer_and_peets" TYPE FILE FILES "/home/habit/assign_term8/ROS2_Try_proj/build/customer_and_peets/ament_cmake_environment_hooks/package.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/habit/assign_term8/ROS2_Try_proj/build/customer_and_peets/ament_cmake_index/share/ament_index/resource_index/packages/customer_and_peets")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/customer_and_peets/cmake" TYPE FILE FILES
-    "/home/mrdan/crs_ws/build/customer_and_peets/ament_cmake_core/customer_and_peetsConfig.cmake"
-    "/home/mrdan/crs_ws/build/customer_and_peets/ament_cmake_core/customer_and_peetsConfig-version.cmake"
+    "/home/habit/assign_term8/ROS2_Try_proj/build/customer_and_peets/ament_cmake_core/customer_and_peetsConfig.cmake"
+    "/home/habit/assign_term8/ROS2_Try_proj/build/customer_and_peets/ament_cmake_core/customer_and_peetsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/customer_and_peets" TYPE FILE FILES "/home/mrdan/crs_ws/src/customer_and_peets/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/customer_and_peets" TYPE FILE FILES "/home/habit/assign_term8/ROS2_Try_proj/src/customer_and_peets/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -144,5 +153,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/mrdan/crs_ws/build/customer_and_peets/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/habit/assign_term8/ROS2_Try_proj/build/customer_and_peets/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
