@@ -20,5 +20,8 @@
         "/home/mrdan/dev_ws/install/originbot_description/lib/python3.8/site-packages",
         "/home/mrdan/dev_ws/install/line_follower_model/lib/python3.8/site-packages",
         "/opt/ros/foxy/lib/python3.8/site-packages"
-    ]
+    ],
+    "files.associations": {
+        "__node_handle": "cpp"
+    }
 }
